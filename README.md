@@ -9,3 +9,6 @@
 ## 사용 언어
 1) C++
 2) Python 3.x
+
+## 코테 연습 관련 도움되는 글
+https://thinline-it.tistory.com/8?category=914712
