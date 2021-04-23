@@ -11,4 +11,6 @@
 2) Python 3.x
 
 ## 코테 연습 관련 도움되는 글
+1) 백준에서 문제 골라 풀 수 있는 사이트 : https://solved.ac/class
+2) 코테 연습 관련 블로그
 https://thinline-it.tistory.com/8?category=914712
