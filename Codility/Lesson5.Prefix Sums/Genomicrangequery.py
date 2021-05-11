@@ -5,7 +5,7 @@
 def solution(S, P, Q):
     res = []
     for i in range(len(P)):
-        tmpStr = S[P[i], Q[i]+1]
+        tmpStr = S[P[i]: Q[i]+1]
         if 'A' in tmpStr:
             res.append(1)
         elif 'C' in tmpStr:
