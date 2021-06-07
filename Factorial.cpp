@@ -3,8 +3,8 @@
 using namespace std;
 
 int dp[101] = { 0 };
-
-//재귀함수 이용
+ 
+// 1. 재귀함수 이용
 int factorial(int n) {
 	if (n == 1)
 		return 1;
@@ -12,7 +12,7 @@ int factorial(int n) {
 		return n * factorial(n - 1);
 }
 
-//반복문 이용
+// 2. 반복문 이용
 void factorial2(int n) {
 	int result = 1;
 	for (int i = 1; i <= n; i++) {
@@ -21,7 +21,7 @@ void factorial2(int n) {
 	cout << result << endl;
 }
 
-//dp(memorize) 이용
+// 3. dp(memorize) 이용
 int factorial3(int n) {
 	if (dp[n] != 0) {
 		return dp[n];
