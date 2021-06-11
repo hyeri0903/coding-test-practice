@@ -26,3 +26,7 @@ def mergeSort(li):
     left = mergeSort(li[:mid])
     right = mergeSort(li[mid:])
     return merge(left, right)
+
+
+if __name__ == "__main__":
+    print(mergeSort([9, 3, 2, 5, 1, -1]))
