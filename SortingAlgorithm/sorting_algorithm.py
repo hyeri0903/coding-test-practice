@@ -1,3 +1,7 @@
+# 1. 선택정렬
+#가장 작은 값의 index를 찾은(선택) 후 현재 위치와 바꿈
+#평균시간복잡도 : O(n^2)
+
 def selectionSort(li):
     for i in range(len(li)):
         minIdx = i
@@ -12,7 +16,14 @@ def selectionSort(li):
         li[i], li[minIdx] = li[minIdx], li[i]
         
     print(li)
+
     
+# 2. 삽입정렬
+#두번째 원소부터 시작하여 현재 위치보다 앞의 원소들과 값 비교
+#현재 pivot값 보다 더 큰 수가 앞에 존재한다면 현재 위치에 (li[j+1]) 그 값(큰 값, li[j])을 넣고 계속 앞의 원소 값 탐색
+#평균시간복잡도 : O(n^2)
+#Best : O(N) , 이미정렬되어있는 경우
+
 def insertionSort(li):
     for i in range(len(li)):
         pivot = li[i]
@@ -22,7 +33,11 @@ def insertionSort(li):
             j -= 1
         li[j+1] = pivot
     print(li)
+
     
+# 3. 버블정렬
+#2개 원소를 계속 비교해가면서 정렬
+#평균시간복잡도 : O(n^2)
 def bubbleSort(li):
     for i in range(len(li)-1, 0, -1):
         for j in range(0, i):
