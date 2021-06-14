@@ -25,7 +25,7 @@ def selectionSort(li):
 #Best : O(N) , 이미정렬되어있는 경우
 
 def insertionSort(li):
-    for i in range(len(li)):
+    for i in range(1, len(li)):
         pivot = li[i]
         j = i-1
         while j>=0 and pivot < li[j]:
