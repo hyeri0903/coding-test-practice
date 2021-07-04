@@ -4,6 +4,11 @@
 #         self.val = val
 #         self.left = left
 #         self.right = right
+from collections import deque
+
+'''
+sol 1)
+'''
 class Solution:
     def maxDepth(self, root: TreeNode) -> int:
         if root == None:
@@ -24,3 +29,26 @@ class Solution:
         
         search(node, 1)
         return max(height)
+    
+    
+'''
+sol 2)
+class Solution:
+    def maxDepth(self, root: TreeNode) -> int:
+        if root == None:
+            return 0
+        
+        level = 0
+        queue = deque([root])
+        
+        while queue:
+            level += 1
+            for _ in range(len(queue)):
+                curNode = queue.popleft()
+                if curNode.left:
+                    queue.append(curNode.left)
+                if curNode.right:
+                    queue.append(curNode.right)
+                    
+        return level
+ '''
